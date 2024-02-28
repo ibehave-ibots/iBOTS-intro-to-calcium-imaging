@@ -1,0 +1,16 @@
+tasks:
+  - name: Install Mamba, create and activate the workshop-env environment
+    init: |
+      curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o ~/miniconda.sh
+      bash ~/miniconda.sh -b -p $HOME/miniconda
+      source $HOME/miniconda/etc/profile.d/conda.sh
+      echo "source $HOME/miniconda/etc/profile.d/conda.sh" >> $HOME/.bashrc
+      echo "conda activate" >> $HOME/.bashrc
+    command: exec bash
+
+vscode:
+  extensions:
+    - ms-python.python
+    - akosyakov.gitpod-monitor
+    - ms-toolsai.jupyter
+    
