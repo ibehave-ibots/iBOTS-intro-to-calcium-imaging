@@ -9,7 +9,7 @@ tasks:
       source $HOME/miniconda/etc/profile.d/conda.sh
       echo "source $HOME/miniconda/etc/profile.d/conda.sh" >> $HOME/.bashrc
       echo "conda activate caiman" >> $HOME/.bashrc
-      conda create -n caiman
+      conda create -y -n caiman
       conda install -y -n caiman -c conda-forge caiman python=3.10
     command: exec bash
 
