@@ -1,3 +1,4 @@
 *.tif*
 *pycache*
-day1/2 TIFF File Management and OME Files (solutions).ipynb
+*.mmap
+data/
