@@ -8,8 +8,8 @@ tasks:
       bash ~/miniconda.sh -b -p $HOME/miniconda
       source $HOME/miniconda/etc/profile.d/conda.sh
       echo "source $HOME/miniconda/etc/profile.d/conda.sh" >> $HOME/.bashrc
-      echo "conda activate" >> $HOME/.bashrc
-      conda install -y -n base -c conda-forge caiman python=3.10
+      echo "conda activate caiman" >> $HOME/.bashrc
+      conda install -y -n caiman -c conda-forge caiman python=3.10
     command: exec bash
 
 vscode:
