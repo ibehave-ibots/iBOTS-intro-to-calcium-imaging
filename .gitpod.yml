@@ -1,3 +1,4 @@
+image: "gitpod/workspace-full-vnc"
 tasks:
   - name: Install Mamba, create and activate the workshop-env environment
     init: |
